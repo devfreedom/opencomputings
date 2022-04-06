@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1280"
+   height="360"
+   viewBox="0 0 338.66666 95.25"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="opencomputings-logo.svg"
+   inkscape:export-filename="/media/owner/Shared Media/PERSONAL PROJECTS/devfreedom/opencomputings/opencomputings-logo.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="1280px"
+     inkscape:zoom="0.69664703"
+     inkscape:cx="663.89431"
+     inkscape:cy="441.4"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="307.59503"
+       y="118.99633"
+       width="952.25098"
+       height="125.01848"
+       id="rect1617" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-9.4862393,1.6602421)"
+       id="text1615"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;line-height:1.25;font-family:Trueno;-inkscape-font-specification:Trueno;white-space:pre;shape-inside:url(#rect1617);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="307.5957"
+         y="207.22907"
+         id="tspan3928"><tspan
+   style="font-weight:bold;-inkscape-font-specification:'Trueno Bold'"
+   id="tspan3926">OPEN</tspan>COMPUTINGS</tspan></text>
+    <path
+       id="path28021"
+       style="fill:none;stroke:#162d50;stroke-width:5.555;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       sodipodi:type="arc"
+       sodipodi:cx="41.524254"
+       sodipodi:cy="47.625"
+       sodipodi:rx="22.230154"
+       sodipodi:ry="22.230247"
+       sodipodi:start="0.57595865"
+       sodipodi:end="5.7072267"
+       sodipodi:arc-type="arc"
+       d="M 60.16803,59.73246 A 22.230154,22.230247 0 0 1 35.210549,68.9398 22.230154,22.230247 0 0 1 19.2941,47.625 22.230154,22.230247 0 0 1 35.21055,26.3102 22.230154,22.230247 0 0 1 60.16803,35.51754"
+       sodipodi:open="true" />
+    <path
+       style="fill:none;stroke:#2c5aa0;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path28990"
+       transform="rotate(90)"
+       sodipodi:type="arc"
+       sodipodi:cx="47.625"
+       sodipodi:cy="-41.433575"
+       sodipodi:rx="10.991038"
+       sodipodi:ry="10.991038"
+       sodipodi:start="0.43633231"
+       sodipodi:end="5.846853"
+       sodipodi:arc-type="arc"
+       d="m 57.586264,-36.788561 a 10.991038,10.991038 0 0 1 -12.34016,6.085493 10.991038,10.991038 0 0 1 -8.612142,-10.730507 10.991038,10.991038 0 0 1 8.612142,-10.730507 10.991038,10.991038 0 0 1 12.34016,6.085494"
+       sodipodi:open="true" />
+  </g>
+</svg>
