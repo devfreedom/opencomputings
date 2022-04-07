@@ -480,24 +480,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
-.ml-20 {
-  margin-left: 5rem;
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
+.ml-7 {
+  margin-left: 1.75rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .flex {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-20 {
   height: 5rem;
 }
 
-.h-\[85vh\] {
-  height: 85vh;
+.h-\[35vh\] {
+  height: 35vh;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-16 {
+  height: 4rem;
 }
 
 .w-full {
@@ -559,14 +579,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Fira Sans, sans-serif;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-normal {
@@ -589,6 +619,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2;
 }
 
+.leading-snug {
+  line-height: 1.375;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -597,4 +631,108 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-slate-100 {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .phone\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tablet\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
+  .tablet\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .tablet\:flex {
+    display: flex;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-\[70vh\] {
+    height: 70vh;
+  }
+
+  .tablet\:h-16 {
+    height: 4rem;
+  }
+
+  .tablet\:w-4\/5 {
+    width: 80%;
+  }
+
+  .tablet\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .tablet\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .tablet\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .tablet\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .tablet\:leading-relaxed {
+    line-height: 1.625;
+  }
+}
+
+@media (min-width: 1280px) {
+  .laptop\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .laptop\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .laptop\:flex {
+    display: flex;
+  }
+
+  .laptop\:hidden {
+    display: none;
+  }
+
+  .laptop\:h-\[85vh\] {
+    height: 85vh;
+  }
+
+  .laptop\:h-20 {
+    height: 5rem;
+  }
+
+  .laptop\:w-4\/5 {
+    width: 80%;
+  }
+
+  .laptop\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .laptop\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .laptop\:leading-relaxed {
+    line-height: 1.625;
+  }
 }

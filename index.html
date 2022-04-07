@@ -18,10 +18,10 @@
 <body>
 
   <!-- Header section-->
-  <header class="bg-white w-full h-20 flex place-content-center">
-    <div id="header-container" class="bg-white w-4/5 flex justify-between">
-      <img id="header-logo" src="./img/header-logo.png">
-      <div id="header-menu-container" class="md:hidden w-3/5 flex flex-row justify-around items-center">
+  <header class="bg-white flex place-content-center w-full h-16 tablet:h-16 laptop:h-20">
+    <div id="header-item-container" class="bg-white flex justify-between w-full tablet:w-4/5 laptop:w-4/5">
+      <img id="header-logo" class="ml-3 tablet:ml-0 laptop:ml-0" src="./img/header-logo.png">
+      <div id="header-menu-container" class="hidden tablet:flex laptop:flex flex-row justify-around items-center w-3/5">
         <div class="font-normal">
           <a href="">FREE AND OPEN SOURCE</a>
         </div>
@@ -43,11 +43,21 @@
 
   <!-- Hero section-->
   <div id="hero-container" class="relative w-full flex">
-    <div id="hero-headline" class="z-30 relative w-full h-[85vh] flex flex-col justify-center ml-20">
-      <h1 class="font-fira-sans text-white font-extrabold text-7xl">Open computing</h1>
-      <h1 class="font-fira-sans text-white font-extrabold text-7xl leading-relaxed">as a lifestyle</h1>
-      <h2 class="font-fira-sans text-slate-100 font-bold text-3xl leading-loose">Join the world of free and open computing</h2>
-      <h2 class="font-fira-sans text-slate-100 font-bold text-3xl">that gives more power to you</h2>
+    <div id="hero-headline" class="z-30 relative flex flex-col justify-center w-full h-[35vh] tablet:h-[70vh] laptop:h-[85vh] ml-7 tablet:ml-10 laptop:ml-20">
+      <div id="title-phone-only" class="flex flex-col tablet:hidden laptop:hidden">
+        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">Open</h1>
+        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">computing</h1>
+        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">as a</h1>
+        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">lifestyle</h1>
+      </div>    
+      <div class="hidden tablet:flex laptop:flex flex-col">
+        <h1 class="font-fira-sans text-white font-extrabold tablet:text-5xl laptop:text-7xl">Open computing</h1>
+        <h1 class="font-fira-sans text-white font-extrabold tablet:text-5xl tablet:leading-relaxed laptop:text-7xl laptop:leading-relaxed">as a lifestyle</h1>
+      </div>
+      <div class="hidden tablet:flex laptop:flex flex-col">
+        <h2 class="font-fira-sans text-slate-100 font-bold tablet:text-xl laptop:text-3xl">Join the world of free and open computing</h2>
+        <h2 class="font-fira-sans text-slate-100 font-bold tablet:text-xl laptop:text-3xl">that gives more power to you</h2>
+      </div>
     </div>
     <video id="hero-bg-video" class="w-full h-full absolute object-cover object-center" playsinline autoplay muted loop poster="./img/hero-background.jpg">
     <source src="./img/hero-background.mp4" type="video/mp4">
@@ -55,7 +65,10 @@
 
   </div>
 
-<p>Lorem ipsum</p>
+  <!-- Intro section-->
+  <div id="intro-container" class="w-full h-"
+
+  <p>Lorem ipsum</p>
 
 </body>
 </html>
