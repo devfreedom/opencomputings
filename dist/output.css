@@ -480,56 +480,153 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .ml-7 {
   margin-left: 1.75rem;
 }
 
-.ml-3 {
-  margin-left: 0.75rem;
-}
-
 .flex {
   display: flex;
+}
+
+.contents {
+  display: contents;
 }
 
 .hidden {
   display: none;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[35vh\] {
-  height: 35vh;
+.h-16 {
+  height: 4rem;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-\[35vh\] {
+  height: 35vh;
 }
 
-.h-16 {
-  height: 4rem;
+.h-\[360px\] {
+  height: 360px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[70vh\] {
+  height: 70vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .w-full {
   width: 100%;
 }
 
-.w-4\/5 {
-  width: 80%;
-}
-
 .w-3\/5 {
   width: 60%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-\[280px\] {
+  width: 280px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.w-\[90vw\] {
+  width: 90vw;
 }
 
 .flex-row {
@@ -560,9 +657,42 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-around;
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
+.bg-blue-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -575,18 +705,28 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-position: center;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .font-fira-sans {
   font-family: Fira Sans, sans-serif;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-3xl {
@@ -594,13 +734,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.25rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
 
-.font-normal {
-  font-weight: 400;
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .font-extrabold {
@@ -609,14 +764,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold {
   font-weight: 700;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-loose {
-  line-height: 2;
 }
 
 .leading-snug {
@@ -633,6 +780,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
+.text-slate-500 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.text-slate-50\/25 {
+  color: rgb(248 250 252 / 0.25);
+}
+
+.text-slate-50\/50 {
+  color: rgb(248 250 252 / 0.5);
+}
+
+.text-slate-50\/75 {
+  color: rgb(248 250 252 / 0.75);
+}
+
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 @media (min-width: 640px) {
   .phone\:hidden {
     display: none;
@@ -644,10 +813,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 2.5rem;
   }
 
-  .tablet\:ml-0 {
-    margin-left: 0px;
-  }
-
   .tablet\:flex {
     display: flex;
   }
@@ -656,26 +821,29 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .tablet\:h-\[70vh\] {
-    height: 70vh;
-  }
-
   .tablet\:h-16 {
     height: 4rem;
   }
 
-  .tablet\:w-4\/5 {
-    width: 80%;
+  .tablet\:h-\[70vh\] {
+    height: 70vh;
   }
 
-  .tablet\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .tablet\:h-\[720px\] {
+    height: 720px;
   }
 
-  .tablet\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .tablet\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
+  }
+
+  .tablet\:px-7 {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 
   .tablet\:text-5xl {
@@ -698,10 +866,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: 5rem;
   }
 
-  .laptop\:ml-0 {
-    margin-left: 0px;
-  }
-
   .laptop\:flex {
     display: flex;
   }
@@ -710,16 +874,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
-  .laptop\:h-\[85vh\] {
-    height: 85vh;
-  }
-
   .laptop\:h-20 {
     height: 5rem;
   }
 
-  .laptop\:w-4\/5 {
-    width: 80%;
+  .laptop\:h-\[85vh\] {
+    height: 85vh;
+  }
+
+  .laptop\:h-\[960px\] {
+    height: 960px;
+  }
+
+  .laptop\:h-\[720px\] {
+    height: 720px;
+  }
+
+  .laptop\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .laptop\:w-11\/12 {
+    width: 91.666667%;
   }
 
   .laptop\:text-7xl {

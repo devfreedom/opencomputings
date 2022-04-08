@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenComputings</title>
   <link href="./dist/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,60 +14,72 @@
     &family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700
     &family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900
     &family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <title>OpenComputings</title>
+  <script src="./index.js" async></script>
 </head>
-<body>
 
+<body>
   <!-- Header section-->
   <header class="bg-white flex place-content-center w-full h-16 tablet:h-16 laptop:h-20">
-    <div id="header-item-container" class="bg-white flex justify-between w-full tablet:w-4/5 laptop:w-4/5">
-      <img id="header-logo" class="ml-3 tablet:ml-0 laptop:ml-0" src="./img/header-logo.png">
-      <div id="header-menu-container" class="hidden tablet:flex laptop:flex flex-row justify-around items-center w-3/5">
-        <div class="font-normal">
-          <a href="">FREE AND OPEN SOURCE</a>
-        </div>
-        <div class="font-normal">
-          <a href="">CATALOGUE</a>
-        </div>
-        <div class="font-normal">
-          <a href="">RESOURCES</a>
-        </div>
-        <div class="font-normal">
-          <a href="">BLOG</a>
-        </div>
-        <div class="font-normal">
-          <a href="">ABOUT</a>
-        </div>
+    <div id="header-item-container" class="bg-white flex justify-between w-full px-3 tablet:w-full tablet:px-7 laptop:w-11/12">
+      <div id="header-logo" class="w-[280px]">
+        <a href=""><img class="h-full object-contain" src="./img/header-logo.png"></a>
+      </div>
+
+      <!-- Improvement Roadmap: Expand contents and subcategories, make it as a megamenu -->
+      <div id="header-menu-laptop" class="hidden tablet:hidden laptop:flex flex-row justify-around items-center w-3/5">
+        <a href="">FREE AND OPEN SOURCE</a>
+        <a href="">CATALOGUE</a>
+        <a href="">RESOURCES</a>
+        <a href="">BLOG</a>
+        <a href="">ABOUT</a>
+      </div>
+      <div id="menu-open-btn" class="flex flex-col laptop:hidden justify-center space-y-1.5 mx-2" onClick="openMenu();">
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+        <div class="w-7 h-[2px] bg-gray-600"></div>
+      </div>
+      
+      <div id="menu-close-btn" class="hidden laptop:hidden justify-center items-center mx-2" onClick="closeMenu();">
+        <h1 class="text-slate-500">CLOSE ×<h1>
       </div>
     </div>
   </header>
 
+  <!-- Floating menu navigation bar for phone/tablet -->
+  <!-- Improvement Roadmap: Expand contents and subcategories, make it as a megamenu -->
+  <div id="header-menu-mobile" class="z-20 absolute hidden laptop:hidden w-full h-[50vh] bg-white drop-shadow-xl flex flex-col justify-center items-center justify-around py-10">
+    <a href="">FREE AND OPEN SOURCE</a>
+    <a href="">CATALOGUE</a>
+    <a href="">RESOURCES</a>
+    <a href="">BLOG</a>
+    <a href="">ABOUT</a>     
+  </div>
+
   <!-- Hero section-->
   <div id="hero-container" class="relative w-full flex">
-    <div id="hero-headline" class="z-30 relative flex flex-col justify-center w-full h-[35vh] tablet:h-[70vh] laptop:h-[85vh] ml-7 tablet:ml-10 laptop:ml-20">
+    <div id="hero-headline" class="z-10 relative flex flex-col justify-center w-full h-[360px] tablet:h-[600px] laptop:h-[800px] ml-7 tablet:ml-10 laptop:ml-20">
       <div id="title-phone-only" class="flex flex-col tablet:hidden laptop:hidden">
-        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">Open</h1>
-        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">computing</h1>
-        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">as a</h1>
-        <h1 class="font-fira-sans text-white font-extrabold text-3xl leading-snug">lifestyle</h1>
-      </div>    
+        <h1 class="font-fira-sans text-white font-black text-3xl leading-snug">Open</h1>
+        <h1 class="font-fira-sans text-white font-black text-3xl leading-snug">computing</h1>
+        <h1 class="font-fira-sans text-white font-black text-3xl leading-snug">as a</h1>
+        <h1 class="font-fira-sans text-white font-black text-3xl leading-snug">lifestyle</h1>
+      </div>
       <div class="hidden tablet:flex laptop:flex flex-col">
         <h1 class="font-fira-sans text-white font-extrabold tablet:text-5xl laptop:text-7xl">Open computing</h1>
         <h1 class="font-fira-sans text-white font-extrabold tablet:text-5xl tablet:leading-relaxed laptop:text-7xl laptop:leading-relaxed">as a lifestyle</h1>
       </div>
       <div class="hidden tablet:flex laptop:flex flex-col">
-        <h2 class="font-fira-sans text-slate-100 font-bold tablet:text-xl laptop:text-3xl">Join the world of free and open computing</h2>
-        <h2 class="font-fira-sans text-slate-100 font-bold tablet:text-xl laptop:text-3xl">that gives more power to you</h2>
+        <h2 class="font-fira-sans text-slate-50/75 font-bold tablet:text-xl laptop:text-3xl">Join the world of free and open computing</h2>
+        <h2 class="font-fira-sans text-slate-50/75 font-bold tablet:text-xl laptop:text-3xl">that gives more power to you</h2>
       </div>
     </div>
     <video id="hero-bg-video" class="w-full h-full absolute object-cover object-center" playsinline autoplay muted loop poster="./img/hero-background.jpg">
     <source src="./img/hero-background.mp4" type="video/mp4">
     </video>
-
   </div>
 
   <!-- Intro section-->
-  <div id="intro-container" class="w-full h-"
+  <div id="intro-container" class="w-full"></div>
 
   <p>Lorem ipsum</p>
 
