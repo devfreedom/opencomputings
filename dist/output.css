@@ -559,20 +559,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: fit-content;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
-.h-36 {
-  height: 9rem;
+.h-32 {
+  height: 8rem;
 }
 
 .h-10 {
   height: 2.5rem;
-}
-
-.h-32 {
-  height: 8rem;
 }
 
 .max-h-80 {
@@ -603,6 +595,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-11\/12 {
   width: 91.666667%;
+}
+
+.w-4\/5 {
+  width: 80%;
 }
 
 .w-max {
@@ -972,14 +968,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .tablet\:h-\[600px\] {
     height: 600px;
-  }
-
-  .tablet\:h-36 {
-    height: 9rem;
-  }
-
-  .tablet\:h-44 {
-    height: 11rem;
   }
 
   .tablet\:h-52 {
