@@ -73,7 +73,7 @@
         <h2 class="font-fira-sans text-slate-50/75 font-semibold tablet:text-xl laptop:text-3xl">Join us for free and open computing</h2>
         <h2 class="font-fira-sans text-slate-50/75 font-semibold tablet:text-xl laptop:text-3xl">that gives more power to you.</h2>
         <h2 class="font-fira-sans text-white font-bold tablet:text-xl laptop:text-3xl mt-12">No signup, no payment, it's free for everyone.</h2>
-        <button class="w-fit h-fit rounded-md border-b-4 border-sky-700 bg-sky-500 text-white mt-5 p-3" onclick="location.href=''">GET STARTED</button>
+        <button class="w-fit h-fit rounded-md border-b-4 border-sky-700 bg-sky-500 text-white mt-7 p-3" onclick="location.href=''">GET STARTED</button>
       </div>
     </div>
     <video id="hero-bg-video" class="w-full h-full absolute object-cover object-center" playsinline autoplay muted loop poster="./img/hero-bg-poster.jpg">
@@ -81,29 +81,44 @@
     </video>
   </div>
 
-  <!-- Intro section-->
-  <div id="intro-container" class="flex flex-col items-center justify-center w-full bg-white my-">
+  <!-- Intro sections start here-->
+  <div id="intro-container" class="flex flex-col items-center justify-center w-full bg-white">
     <div id="intro-headlines" class="m-5 tablet:my-5 laptop:my-10 font-fira-sans">
-      <h3 class="bg-gradient-to-r bg-clip-text from-cyan-400 to-blue-700 text-transparent font-bold text-4xl tablet:text-6xl laptop:text-5xl text-center px-10 pb-5">Accessibility. Transparency. Freedom.</h3>
-      <h3 class="bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-6xl text-center pb-5">Welcome to the world of open source.</h3>
+      <h3 class="bg-gradient-to-r bg-clip-text from-cyan-400 to-blue-700 text-transparent font-bold text-4xl tablet:text-6xl laptop:text-6xl text-center px-10 pb-5">Accessibility. Transparency. Freedom.</h3>
+      <h3 class="bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-5xl text-center pb-5">Welcome to the world of open source.</h3>
     </div>
     <div id="intro-wrapper" class="flex flex-col tablet:flex-row-reverse laptop:flex-row-reverse items-center justify-center w-full laptop:w-4/5 px-7 tablet:px-10 laptop:px-10 bg-white">
-      <div id="intro-image" class="flex flex-row justify-center items-center w-4/5 tablet:w-1/2 laptop:w-2/5 tablet:ml-10 laptop:ml-10">
-        <img class="rounded-full max-h-80 max-w-80 drop-shadow-3xl" src="./img/computers.jpg" text="Photo of gadgets by Christian Lambert">
+      <div id="intro-image" class="flex flex-row justify-center items-center w-3/5 tablet:w-1/2 laptop:w-2/5 tablet:ml-10 laptop:ml-10">
+        <img class="rounded-full max-h-80 max-w-80 drop-shadow-xl mb-16" src="./img/computers.jpg" text="Photo of gadgets by Christian Lambert">
       </div>
-      <div class="h-16 tablet:hidden laptop:hidden"></div>
       <div id="intro-paragraph" class="flex flex-col justify-center w-full tablet:w-fit laptop:w-fit text-lg tablet:text-xl laptop:text-2xl text-center tablet:text-left laptop:text-left font-lato font-medium">
-        <p class="text-slate-800">This digital world we are living in is built on all kinds of computings. And we make use of it for our daily lives. Texting with your friends, having a video call with your family, managing your personal finance, editing photos and videos, working remotely and in person, everything.</p>
+        <p class="">In this modern digital world, our daily lives are connected to all sorts of computings.</p>
+        <p class="mt-5">Think about it. Texting with your friends, having a video call with your family, managing your personal finance, editing photos and videos, working remotely and in person, almost everything.</p>
         <p class="mt-5">This is why you need computings that respect you and give control to you.</p>
         <p class="font-bold underline underline-offset-4 decoration-4">Because your life matters.</p>
       </div>
     </div>
   </div>
 
+  <div class="bg-white h-20 tablet:h-36 laptop:h-72"></div>
 
+  <div id="intro-3-container" class="flex flex-col items-center justify-center w-full bg-white">
+    <div id="intro-3-wrapper" class="flex flex-col justify-between w-11/12 tablet:w-11/12 laptop:w-4/5 rounded-xl tablet:rounded-2xl laptop:rounded-3xl bg-[url('../img/code.jpg')] bg-cover bg-center px-7 py-12 tablet:p-15 laptop:p-20">
+      <div id="intro-3-headline" class="h-fit w-full tablet:w-fit laptop:w-fit shadow-2xl shadow-white text-center text-white font-fira-sans font-bold text-2xl tablet:text-4xl laptop:text-5xl">
+        <h1 class="bg-black p-3">Take control of your data and identity</h1>
+      </div>  
+      <div id="intro-3-paragraph" class="flex flex-col place-self-end mt-[10%] tablet:mt-[10%] tablet:mr-[5%] laptop:mr-[15%] laptop:mt-[15%] w-3/5 tablet:w-3/5 laptop:w-2/5 bg-gray-800/75 p-5 tablet:p-5 laptop:p-10 shadow-2xl shadow-white/50 rounded-xl text-lg tablet:text-xl laptop:text-2xl text-left text-white font-lato font-medium">
+        <p>Open source means transparent and auditable, so open source products are far superior in terms of privacy and data security. It simply has less reasons to track or spy on you.</p>
+        <p class="mt-5">Protect your data and identity from other influences by choosing the "open computing first" approach.
+      </div>
+   
+    </div>
+  </div> 
 
-  <div id="intro-2-container" class="flex flex-col items-center justify-center w-full bg-[url('../img/future.jpg')] bg-fixed bg-cover my-32">
-    <div id="intro2-wrapper" class="flex flex-col tablet:flex-row laptop:flex-row items-center justify-center w-full laptop:w-4/5 bg-transparent p-7 tablet:p-10 laptop:p-10">
+  <div class="bg-white h-20 tablet:h-36 laptop:h-72"></div>
+
+  <div id="intro-2-container" class="flex flex-col items-center justify-center w-full bg-[url('../img/future.jpg')] bg-fixed bg-cover">
+    <div id="intro2-wrapper" class="flex flex-col tablet:flex-row laptop:flex-row items-center w-full laptop:w-4/5 bg-transparent p-7 tablet:p-10 laptop:p-10">
       <div id="intro2-headlines" class="flex flex-col w-full tablet:w-2/5 laptop:w-2/5 items-center tablet:items-start laptop:items-start justify-center mix-blend-lighten font-fira-sans font-bold text-7xl tablet:text-8xl laptop:text-9xl">
         <h1 class="bg-white w-max px-3">Be a</h1>
         <h1 class="bg-white w-max px-3">part</h1>
@@ -111,8 +126,12 @@
         <h1 class="bg-white w-max px-3">future</h1 >
       </div>
       <div class="h-10 tablet:hidden laptop:hidden"></div>
-      <div id="intro2-paragraph" class="flex flex-col laptop:justify-end w-fit w-full tablet:w-auto laptop:w-auto text-lg tablet:text-xl laptop:text-2xl text-center font-lato font-medium tablet:m-10 laptop:m-10">
-        <p class="text-white bg-black/75 p-5 tablet:p-10 laptop:p-10">From big enterprises to hobbyist developers, from complex large-scale systems to mobile apps, more and more things are going open source. Because open source softwares and hardwares enable collaborative innovation. Open computing is the future and it's time for you to be a part of it.</p>
+      <div id="intro2-paragraph" class="flex flex-col w-fit w-full tablet:w-auto laptop:w-auto text-lg tablet:text-xl laptop:text-2xl text-center font-lato font-medium tablet:m-10 laptop:m-10">
+        <div class="text-white bg-black/75 p-5 tablet:p-10 laptop:p-10">
+          <p>From big enterprises to hobbyist developers, from complex large-scale systems to mobile apps, more and more things are going open source. 
+          <p class="mt-5">Because open source softwares and hardwares enable collaborative innovation and it's constantly evolving even at this moment.</p>
+          <p class="mt-5">Open computing is the future and it's time for you to be a part of it.</p>
+        </div>
       </div>
     </div>
   </div>
