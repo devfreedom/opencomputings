@@ -22,7 +22,7 @@ module.exports = {
         'ubuntu' : 'Ubuntu, sans-serif'
       },
       dropShadow: {
-        'xl': '0 20px 20px rgba(0, 0, 0, 0.5)',
+        'xl': '0 10px 10px rgba(0, 0, 0, 0.5)',
         '2xl': '0 20x 30px rgba(0, 0, 0, 0.5)',
         '3xl': '0 35px 35px rgba(0, 0, 0, 0.5)',
         '4xl': [

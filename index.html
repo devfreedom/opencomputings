@@ -19,8 +19,8 @@
 
 <body>
   <!-- Header section-->
-  <header class="bg-white flex place-content-center w-full h-16 tablet:h-16 laptop:h-20">
-    <div id="header-item-container" class="bg-white flex justify-between w-full px-3 tablet:w-full tablet:px-7 laptop:w-11/12">
+  <header class="fixed z-20 bg-white flex place-content-center w-full h-16 tablet:h-16 laptop:h-20 drop-shadow-lg tablet:drop-shadow-xl laptop:drop-shadow-xl">
+    <div id="header-item-container" class="flex justify-between w-full bg-white px-3 tablet:w-full tablet:px-7 laptop:w-3/5">
       <div id="header-logo" class="w-[280px]">
         <a href=""><img class="h-full object-contain" src="./img/header-logo.png"></a>
       </div>
@@ -47,7 +47,7 @@
 
   <!-- Floating menu navigation bar for phone/tablet -->
   <!-- Improvement Roadmap: Expand contents and subcategories -->
-  <div id="header-menu-mobile" class="z-20 absolute hidden laptop:hidden w-full h-96 bg-white drop-shadow-xl flex flex-col justify-center items-center justify-around py-10">
+  <div id="header-menu-mobile" class="z-30 flex flex-col hidden laptop:hidden justify-center items-center justify-around w-full h-96 mt-16 bg-white drop-shadow-xl py-10">
     <a href="">FREE AND OPEN SOURCE</a>
     <a href="">CATALOGUE</a>
     <a href="">RESOURCES</a>
@@ -55,15 +55,17 @@
     <a href="">ABOUT</a>     
   </div>
 
+  <div id="header-spacer" class="bg-white h-16 tablet:h-16 laptop:h-20"></div>
+
   <!-- Hero section-->
-  <div id="hero-container" class="relative w-full flex drop-shadow-xl tablet:drop-shadow-3xl laptop:drop-shadow-4xl mb-24 tablet:mb-44 laptop:mb-52">
+  <div id="hero-container" class="relative w-full flex drop-shadow-xl tablet:drop-shadow-3xl laptop:drop-shadow-4xl">
     <div id="hero-headlines" class="z-10 relative flex flex-col justify-center w-full h-[360px] tablet:h-[600px] laptop:h-[800px] ml-7 tablet:ml-10 laptop:ml-24">
-      <div id="hero-headlines-phone" class="flex flex-col tablet:hidden laptop:hidden font-lato text-white font-extrabold text-4xl">
+      <div id="hero-headlines-phone" class="flex flex-col tablet:hidden laptop:hidden font-lato text-white/75 font-extrabold text-3xl">
         <h1>OPEN</h1>
         <h1>COMPUTING</h1>
         <h1>AS A</h1>
         <h1>LIFESTYLE,</h1>
-        <h2 class="text-3xl underline underline-offset-4 decoration-4 leading-loose"><a href="">FOR EVERYONE</a></h2>
+        <h1 class="text-white text-2xl underline underline-offset-4 decoration-4 leading-loose"><a href="">FOR EVERYONE</a></h1>
       </div>
       <div class="hidden tablet:flex laptop:flex flex-col">
         <h1 class="font-lato text-white font-black tablet:text-5xl laptop:text-7xl">OPEN COMPUTING</h1>
@@ -81,59 +83,98 @@
     </video>
   </div>
 
+  <div class="bg-white h-16 tablet:h-44 laptop:h-36"></div>
+
   <!-- Intro sections start here-->
-  <div id="intro-container" class="flex flex-col items-center justify-center w-full bg-white">
-    <div id="intro-headlines" class="m-5 tablet:my-5 laptop:my-10 font-fira-sans">
+  <div id="intro1-container" class="flex flex-col items-center justify-center w-full bg-white">
+    <div id="intro1-headlines" class="m-5 tablet:my-5 laptop:my-10 font-fira-sans">
       <h3 class="bg-gradient-to-r bg-clip-text from-cyan-400 to-blue-700 text-transparent font-bold text-4xl tablet:text-6xl laptop:text-6xl text-center px-10 pb-5">Accessibility. Transparency. Freedom.</h3>
       <h3 class="bg-gradient-to-r bg-clip-text from-orange-400 to-red-700 text-transparent font-bold text-3xl tablet:text-4xl laptop:text-5xl text-center pb-5">Welcome to the world of open source.</h3>
     </div>
-    <div id="intro-wrapper" class="flex flex-col tablet:flex-row-reverse laptop:flex-row-reverse items-center justify-center w-full laptop:w-4/5 px-7 tablet:px-10 laptop:px-10 bg-white">
-      <div id="intro-image" class="flex flex-row justify-center items-center w-3/5 tablet:w-1/2 laptop:w-2/5 tablet:ml-10 laptop:ml-10">
-        <img class="rounded-full max-h-80 max-w-80 drop-shadow-xl mb-16" src="./img/computers.jpg" text="Photo of gadgets by Christian Lambert">
+    <div id="intro1-wrapper" class="flex flex-col tablet:flex-row-reverse laptop:flex-row-reverse items-center justify-center w-11/12 tablet:w-10/12 laptop:w-3/5 px-7 tablet:px-10 laptop:px-10 bg-white">
+      <div id="intro1-image" class="flex flex-row justify-center items-center w-3/5 tablet:w-1/2 laptop:w-2/5 tablet:ml-10 laptop:ml-10">
+        <img class="rounded-full max-h-80 max-w-80 drop-shadow-xl mb-16 tablet:mb-0 laptop:mb-0" src="./img/computers.jpg" text="Photo of gadgets by Christian Lambert">
       </div>
-      <div id="intro-paragraph" class="flex flex-col justify-center w-full tablet:w-fit laptop:w-fit text-lg tablet:text-xl laptop:text-2xl text-center tablet:text-left laptop:text-left font-lato font-medium">
-        <p class="">In this modern digital world, our daily lives are connected to all sorts of computings.</p>
-        <p class="mt-5">Think about it. Texting with your friends, having a video call with your family, managing your personal finance, editing photos and videos, working remotely and in person, almost everything.</p>
-        <p class="mt-5">This is why you need computings that respect you and give control to you.</p>
-        <p class="font-bold underline underline-offset-4 decoration-4">Because your life matters.</p>
+      <div id="intro1-paragraph" class="flex flex-col justify-center w-full tablet:w-fit laptop:w-fit text-lg tablet:text-lg laptop:text-xl text-left">
+        <p class="">In computing, the term "open source" refers to any software or hardware which its source code or design is made available to the public.</p>
+        <p class="mt-5">Also "free software" means open source software with a wide range of permission to use, distribute, or modify; More emphasis on the freedom itself. </p>
+        <p class="mt-5">From messaging apps to DIY security camera, OpenComputings is dedicated to provide a comprehensive and practical information on free/open computing systems that everyone can make use of.</p>
+        <p class="mt-5 text-xl tablet:text-2xl laptop:text-3xl font-bold underline underline-offset-4 decoration-black decoration-4">Because you deserve more better options.</p>
       </div>
     </div>
   </div>
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
 
-  <div class="bg-white h-32 tablet:h-52 laptop:h-72"></div>
-
-  <div id="intro-3-container" class="flex flex-col items-center justify-center w-full bg-white">
-    <div id="intro-3-wrapper" class="flex flex-col justify-between w-11/12 tablet:w-11/12 laptop:w-4/5 rounded-xl tablet:rounded-2xl laptop:rounded-3xl bg-[url('../img/code.jpg')] bg-cover bg-center px-7 py-12 tablet:p-15 laptop:p-20">
-      <div id="intro-3-headline" class="h-fit w-full tablet:w-fit laptop:w-fit shadow-2xl shadow-white text-center text-white font-fira-sans font-bold text-2xl tablet:text-4xl laptop:text-5xl">
-        <h1 class="bg-black p-3">Take control of your data and identity</h1>
-      </div>  
-      <div id="intro-3-paragraph" class="flex flex-col place-self-end mt-[10%] tablet:mt-[10%] tablet:mr-[5%] laptop:mr-[15%] laptop:mt-[15%] w-4/5 tablet:w-3/5 laptop:w-2/5 bg-gray-800/75 p-5 tablet:p-5 laptop:p-10 shadow-2xl shadow-white/50 rounded-xl text-lg tablet:text-xl laptop:text-2xl text-left text-white font-lato font-medium">
-        <p>Open source means its inside is auditable, so open source products are superior in terms of privacy and data security. Lesser chance and reason to track or spy on you.</p>
-        <p class="mt-5">Protect your data and identity from other influences by choosing the "open computing first" approach.</p>
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
+  <div id="intro2-container" class="flex flex-col items-center justify-center w-full bg-white">
+    <div id="intro2-headline" class="w-11/12 text-center font-fira-sans font-bold text-3xl tablet:text-4xl laptop:text-5xl mb-7 tablet:mb-10 laptop:mb-12">
+      <h1>What's so special about open source?</h1>
+    </div> 
+    <div id="intro2-wrapper" class="flex flex-col tablet:flex-col laptop:flex-row justify-between w-11/12 tablet:w-10/12 laptop:w-3/5 bg-white text-lg tablet:text-lg laptop:text-xl">
+        <div id="intro2-item1" class="flex flex-col tablet:flex-row laptop:flex-col items-center w-full laptop:w-1/3 bg-slate-100 rounded-xl drop-shadow-lg p-7 tablet:p-10 laptop:p-10">
+          <img class="w-3/5 max-w-[15rem] aspect-square rounded-3xl shadow-2xl shadow-black/50" src="./img/sharing.jpg" text="Photo of typewriter by Markus Winkler">
+          <div class="w-full h-7 tablet:w-20 tablet:h-full laptop:w-full laptop:h-12"></div>
+          <div>
+            <p>Open source is a way to share passion and achievement in engineering, and promote businesses in a reciprocal way.</p>
+            <p class="mt-5">This makes most of open source products to be free of charge and available to everyone.</p>
+          </div>
+        </div>
+        <div id="intro2-item2" class="flex flex-col tablet:flex-row laptop:flex-col items-center w-full laptop:w-1/3 bg-slate-100 rounded-lg drop-shadow-lg my-5 tablet:my-7 tablet:mx-0 laptop:my-0 laptop:mx-10 p-7 tablet:p-10 laptop:p-10">
+          <img class="w-3/5 max-w-[15rem] aspect-square rounded-3xl shadow-2xl shadow-black/50" src="./img/blueprint.jpg" text="Photo of blueprint by Sven Mieke">
+          <div class="w-full h-7 tablet:w-20 tablet:h-full laptop:w-full laptop:h-12"></div>
+          <div>
+            <p>Open source means everyone can see what it's made of and how it works.</p>
+            <p class="mt-5">Because of this, there are lesser reason to take advantage of you. It's easier to spot security issues and fix it as well.</p>
+          </div>
+        </div>
+        <div id="intro2-item3" class="flex flex-col tablet:flex-row laptop:flex-col items-center w-full laptop:w-1/3 bg-slate-100 rounded-lg drop-shadow-lg p-7 tablet:p-10 laptop:p-10">
+          <img class="w-3/5 max-w-[15rem] aspect-square rounded-3xl shadow-2xl shadow-black/50" src="./img/collab.jpg" text="Photo of laptops by Marvin Meyer">
+          <div class="w-full h-7 tablet:w-20 tablet:h-full laptop:w-full laptop:h-12"></div>
+          <div>
+            <p>Open source allows people to freely use, improve, contribute, and create something new in various ways.</p>
+            <p class="mt-5">Imagine what's possible when collective intelligence meets freedom, and what you can do with it.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div> 
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
 
-  <div class="bg-white h-32 tablet:h-52 laptop:h-72"></div>
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
+  <div id="intro3-container" class="flex flex-col items-center justify-center w-full bg-white">
+    <div id="intro3-wrapper" class="flex flex-col justify-between w-11/12 tablet:w-10/12 laptop:w-3/5 rounded-xl tablet:rounded-2xl laptop:rounded-3xl bg-[url('../img/code.jpg')] bg-cover bg-center px-7 py-12 tablet:p-15 laptop:p-20">
+      <div id="intro3-headline" class="h-fit w-full tablet:w-fit laptop:w-fit shadow-2xl shadow-white text-center text-white font-fira-sans font-bold text-2xl tablet:text-4xl laptop:text-5xl">
+        <h1 class="bg-black p-3">Take control of your data and identity</h1>
+      </div>  
+      <div id="intro3-paragraph" class="flex flex-col place-self-end mt-[10%] tablet:mt-[10%] tablet:mr-[5%] laptop:mr-[10%] laptop:mt-[15%] w-4/5 tablet:w-3/5 laptop:w-1/2 bg-gray-800/75 p-5 tablet:p-5 laptop:p-10 shadow-xl shadow-gray-300/50 rounded-xl text-lg tablet:text-lg laptop:text-xl text-left text-white font-lato font-medium">
+        <p>Thanks to the very nature of open source, open source products are more likely to respect your privacy and give control to you.</p>
+        <p class="mt-5">Protect your daily lives from unwanted influences and threats by choosing the <b>"open computing first"</b> approach.</p>
+      </div>
+    </div>
+  </div> 
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
 
-  <div id="intro-2-container" class="flex flex-col items-center justify-center w-full bg-[url('../img/future.jpg')] bg-fixed bg-cover">
-    <div id="intro2-wrapper" class="flex flex-col tablet:flex-row laptop:flex-row items-center w-full laptop:w-4/5 bg-transparent p-7 tablet:p-10 laptop:p-10">
-      <div id="intro2-headlines" class="flex flex-col w-full tablet:w-2/5 laptop:w-2/5 items-center tablet:items-start laptop:items-start justify-center mix-blend-lighten font-fira-sans font-bold text-7xl tablet:text-8xl laptop:text-9xl">
+  <div class="bg-white h-16 tablet:h-28 laptop:h-36"></div>
+  <div id="intro4-container" class="flex flex-col items-center justify-center w-full bg-[url('../img/future.jpg')] bg-fixed bg-cover">
+    <div id="intro4-wrapper" class="flex flex-col tablet:flex-row laptop:flex-row items-center w-full laptop:w-3/5 bg-transparent p-7 tablet:p-10 laptop:p-10">
+      <div id="intro4-headlines" class="flex flex-col w-full tablet:w-2/5 laptop:w-2/5 items-center tablet:items-start laptop:items-start justify-center mix-blend-lighten font-fira-sans font-bold text-7xl tablet:text-8xl laptop:text-9xl">
         <h1 class="bg-white w-max px-3">Be a</h1>
         <h1 class="bg-white w-max px-3">part</h1>
         <h1 class="bg-white w-max px-3">of the</h1>
         <h1 class="bg-white w-max px-3">future</h1 >
       </div>
       <div class="h-10 tablet:hidden laptop:hidden"></div>
-      <div id="intro2-paragraph" class="flex flex-col w-fit w-full tablet:w-auto laptop:w-auto text-lg tablet:text-xl laptop:text-2xl text-center font-lato font-medium tablet:m-10 laptop:m-10">
+      <div id="intro4-paragraph" class="flex flex-col w-full tablet:w-auto laptop:w-auto text-lg tablet:text-lg laptop:text-xl text-center font-lato font-medium tablet:m-10 laptop:m-10">
         <div class="text-white bg-black/75 p-5 tablet:p-10 laptop:p-10">
           <p>From big enterprises to hobbyist developers, from complex large-scale systems to mobile apps, more and more things are going open source. 
-          <p class="mt-5">Because open source softwares and hardwares enable collaborative innovation and it's constantly evolving even at this moment.</p>
-          <p class="mt-5">Open computing is the future and it's time for you to be a part of it.</p>
+          <p class="mt-5">Because open source softwares and hardwares enable collaborative innovation and it's changing the world for the better, every day.</p>
+          <p class="mt-10 text-2xl font-bold">Open computing is the future and it's time for you to be a part of it.</p>
         </div>
       </div>
     </div>
   </div>
+
+
 
   <div id="placeholder" class="flex justify-center items-center h-96 ">
     <p>LOREM IPSUM</p>
