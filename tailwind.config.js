@@ -6,9 +6,7 @@ module.exports = {
   theme: {
     screens: {
       'phone': '640px',
-
       'tablet': '768px',
-
       'laptop': '1280px',
     },
 
