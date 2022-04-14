@@ -632,6 +632,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
 .max-w-\[15rem\] {
   max-width: 15rem;
 }
@@ -648,8 +660,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   place-content: center;
 }
 
+.content-center {
+  align-content: center;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -662,6 +694,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-end {
+  justify-items: end;
 }
 
 .space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
@@ -746,6 +782,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / 0.75);
 }
 
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -812,12 +858,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-3 {
@@ -857,12 +903,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
+.font-fira-sans {
+  font-family: "Fira Sans", sans-serif;
+}
+
 .font-lato {
   font-family: Lato, sans-serif;
 }
 
-.font-fira-sans {
-  font-family: Fira Sans, sans-serif;
+.font-fira-code {
+  font-family: "Fira Code", monospace;
 }
 
 .text-3xl {
@@ -892,6 +946,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-7xl {
   font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1;
 }
 
@@ -963,15 +1027,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   mix-blend-mode: lighten;
 }
 
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -987,6 +1051,41 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .shadow-gray-300\/50 {
   --tw-shadow-color: rgb(209 213 219 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-300\/25 {
+  --tw-shadow-color: rgb(209 213 219 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-yellow-300 {
+  --tw-shadow-color: #fde047;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-300 {
+  --tw-shadow-color: #fdba74;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-400 {
+  --tw-shadow-color: #fb923c;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-300\/25 {
+  --tw-shadow-color: rgb(253 186 116 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-300\/50 {
+  --tw-shadow-color: rgb(253 186 116 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-orange-400\/50 {
+  --tw-shadow-color: rgb(251 146 60 / 0.5);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1102,6 +1201,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: auto;
   }
 
+  .tablet\:w-1\/5 {
+    width: 20%;
+  }
+
+  .tablet\:w-2\/6 {
+    width: 33.333333%;
+  }
+
   .tablet\:flex-row {
     flex-direction: row;
   }
@@ -1138,6 +1245,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .tablet\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .tablet\:text-center {
+    text-align: center;
   }
 
   .tablet\:text-5xl {
@@ -1258,6 +1369,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 3rem;
   }
 
+  .laptop\:h-16 {
+    height: 4rem;
+  }
+
   .laptop\:w-3\/5 {
     width: 60%;
   }
@@ -1286,6 +1401,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .laptop\:w-auto {
     width: auto;
+  }
+
+  .laptop\:w-1\/5 {
+    width: 20%;
+  }
+
+  .laptop\:min-w-\[1280px\] {
+    min-width: 1280px;
+  }
+
+  .laptop\:min-w-\[1024px\] {
+    min-width: 1024px;
+  }
+
+  .laptop\:min-w-\[4\/5px\] {
+    min-width: 4 / 5px;
+  }
+
+  .laptop\:min-w-\[3\/5px\] {
+    min-width: 3 / 5px;
   }
 
   .laptop\:flex-row {
@@ -1319,6 +1454,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .laptop\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .laptop\:text-center {
+    text-align: center;
   }
 
   .laptop\:text-7xl {

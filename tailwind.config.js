@@ -12,12 +12,13 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        'fira-code' : 'Fira Code, sans-serif',
-        'fira-sans' : 'Fira Sans, sans-serif',
-        'lato' : 'Lato, sans-serif',
-        'open-sans' : 'Open Sans, sans-serif',
-        'noto-sans' : 'Noto Sans, sans-serif',
-        'ubuntu' : 'Ubuntu, sans-serif'
+        // Note that Tailwind does not automatically escape font names for you. If you’re using a font that contains an invalid identifier, wrap it in quotes or escape the invalid characters.
+        'fira-code' : ['"Fira Code"', 'monospace'],
+        'fira-sans' : ['"Fira Sans"', 'sans-serif'],
+        'lato' : ['Lato', 'sans-serif'],
+        'open-sans' : ['"Open Sans"', 'sans-serif'],
+        'noto-sans' : ['"Noto Sans"', 'sans-serif'],
+        'ubuntu' : ['Ubuntu', 'sans-serif']
       },
       dropShadow: {
         'xl': '0 10px 10px rgba(0, 0, 0, 0.5)',
